@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/dawidd6/go-appindicator"
+	"github.com/gopherlibs/appindicator/appindicator"
 	"github.com/gotk3/gotk3/gtk"
 	"log"
 	"reflect"
