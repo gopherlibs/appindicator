@@ -1,0 +1,4 @@
+project_name: appindicator
+
+builds:
+  - skip: true
