@@ -8,7 +8,7 @@ workflows:
 jobs:
   test:
     docker:
-      - image: cimg/go:1.15.1
+      - image: cimg/go:1.17.7
     steps:
       - checkout
       - run:
@@ -19,5 +19,4 @@ jobs:
       - run:
           name: "Run Tests"
           command: |
-            # upstream tests are failing, commenting out for now
-            #./build.sh -v ./...
+            ./build.sh -v ./...
