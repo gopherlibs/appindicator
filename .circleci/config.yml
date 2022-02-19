@@ -2,11 +2,31 @@ version: 2.1
 
 orbs:
   go: circleci/go@1.7
+  gor: hubci/goreleaser@1.0
 
 workflows:
   main:
     jobs:
       - test
+  release:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              # Simplified SemVer regex
+              only: /^v\d+\.\d+\.\d+$/
+      - gor/release:
+          version: "1.5.0"
+          go-version: "1.17.7"
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              # Simplified SemVer regex
+              only: /^v\d+\.\d+\.\d+$/
+          context: main
 
 jobs:
   test:
