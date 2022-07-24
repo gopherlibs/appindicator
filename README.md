@@ -1,10 +1,10 @@
-# go-appindicator
+# AppIndicator Go
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/dawidd6/go-appindicator)](https://goreportcard.com/report/github.com/dawidd6/go-appindicator)
-[![GoDoc](https://godoc.org/github.com/dawidd6/go-appindicator?status.svg)](https://godoc.org/github.com/dawidd6/go-appindicator)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gopherlibs/appindicator)](https://goreportcard.com/report/github.com/gopherlibs/appindicator)
+[![GoDoc](https://godoc.org/github.com/gopherlibs/appindicator?status.svg)](https://godoc.org/github.com/gopherlibs/appindicator)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 
-Go bindings for [libappindicator3](https://launchpad.net/libappindicator) C library.
+Go (golang) bindings for [libappindicator3](https://launchpad.net/libappindicator) C library.
 
 Libappindicator is a library to allow applications to export a menu into the Unity Menu bar.
 Based on KSNI it also works in KDE and will fallback to generic Systray support if none of those are available.
@@ -47,3 +47,9 @@ For example to build one of examples:
 ## Examples
 
 Examples are located in [examples](./examples) directory
+
+## Project History
+
+AppIndicator Go is a fork of Dawid Dziurla's [go-appindicator](https://github.com/dawidd6/go-appindicator).
+That project was abanzoned and eventually archived.
+This project continues where that one left off, under the same MIT license (of course).
