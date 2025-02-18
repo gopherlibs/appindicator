@@ -4,7 +4,7 @@ on: push
 
 jobs:
   unit-tests:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     env:
       TEST_RESULTS: /tmp/test-results
     steps:
@@ -21,7 +21,7 @@ jobs:
       run: |
         ./build.sh -v ./...
   build-dry-run:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-go@v5
