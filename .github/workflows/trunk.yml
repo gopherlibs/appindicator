@@ -1,0 +1,26 @@
+name: "Trunk WF"
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-go@v5
+      with:
+        go-version-file: 'go.mod'
+    - uses: goreleaser/goreleaser-action@v6
+      with:
+        version: '2.7.0'
+        args: "release --clean"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
