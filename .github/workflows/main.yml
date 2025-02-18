@@ -15,8 +15,7 @@ jobs:
     - name: "Install Deps"
       run: |
         go version
-        sudo apt install libappindicator3-dev libgtk-3-dev
-        #sudo apt install libayatana-appindicator3-dev libgtk-3-dev
+        sudo apt install libayatana-appindicator3-dev libgtk-3-dev
     - name: "Run test"
       run: |
         ./build.sh -v ./...

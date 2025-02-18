@@ -1,8 +1,8 @@
 # GopherLibs >> AppIndicator [![Go Report Card](https://goreportcard.com/badge/github.com/gopherlibs/appindicator)](https://goreportcard.com/report/github.com/gopherlibs/appindicator) [![GoDoc](https://godoc.org/github.com/gopherlibs/appindicator?status.svg)](https://godoc.org/github.com/gopherlibs/appindicator) [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 
-Go (golang) bindings for [libappindicator3](https://launchpad.net/libappindicator) C library.
+Go (golang) bindings for [libayatana-appindicator3](https://github.com/AyatanaIndicators/libayatana-appindicator) C library.
 
-Libappindicator is a library to allow applications to export a menu into the Unity Menu bar.
+Libayatana-appindicator is a library to allow applications to export a menu into the Unity Menu bar.
 Based on KSNI it also works in KDE and will fallback to generic Systray support if none of those are available.
 
 Also it works in:
@@ -21,7 +21,7 @@ This package aims to be interoperable with [Go gtk3 bindings](https://github.com
 On Debian-based distributions:
 
 ```bash
-apt install libappindicator3-dev libgtk-3-dev
+sudo apt install libayatana-appindicator3-dev libgtk-3-dev
 ```
 
 And of course `go` with `cgo` is required.
