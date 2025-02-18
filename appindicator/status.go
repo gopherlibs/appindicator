@@ -1,6 +1,6 @@
 package appindicator
 
-// #include <libappindicator/app-indicator.h>
+// #include <libayatana-appindicator/app-indicator.h>
 import "C"
 
 const (

@@ -1,13 +1,14 @@
 package appindicator
 
-// #cgo pkg-config: appindicator3-0.1
+// #cgo pkg-config: ayatana-appindicator3-0.1
 // #include <stdlib.h>
-// #include <libappindicator/app-indicator.h>
+// #include <libayatana-appindicator/app-indicator.h>
 import "C"
 import (
+	"unsafe"
+
 	"github.com/gotk3/gotk3/glib"
 	"github.com/gotk3/gotk3/gtk"
-	"unsafe"
 )
 
 // Indicator represents a single indicator object.
